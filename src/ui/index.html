@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Emar — พื้นที่ทำการตลาดอีเมล</title>
+  <link rel="stylesheet" href="/ui/styles.css">
+  <link rel="stylesheet" href="/ui/dags.css">
+  <script type="module" src="/ui/app.mjs"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#campaigns"><span class="brand-icon">e</span><span>Emar<span class="brand-sub">EMAIL MARKETING STUDIO</span></span></a>
+    <div class="workspace-label"><span class="workspace-avatar">E</span><div>พื้นที่ของฉัน<small>Standalone workspace</small></div><span class="local-dot" title="ทำงานบนเครื่องนี้"></span></div>
+    <p class="nav-caption">WORKSPACE</p>
+    <nav aria-label="เมนูหลัก">
+      <a href="#campaigns" data-nav="campaigns"><span>◈</span>แคมเปญ<span id="campaign-count" class="nav-count">0</span></a>
+      <a href="#audience" data-nav="audience"><span>♧</span>ผู้รับและความยินยอม</a>
+      <a href="#templates" data-nav="templates"><span>▤</span>เทมเพลต</a>
+      <a href="#files" data-nav="files"><span>▱</span>ไฟล์แนบ</a>
+      <a href="#activity" data-nav="activity"><span>◷</span>ประวัติกิจกรรม</a>
+      <a href="#dags" data-nav="dags"><span>◇</span>เวิร์กโฟลว์</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="approval-note"><span>✓</span><strong>ทุกฉบับเริ่มจากคุณ</strong><p>ตรวจเนื้อหาและอนุมัติด้วยตัวเอง<br>ก่อนนำแคมเปญเข้าคิวส่ง</p></div><a class="settings-link" href="#settings">⚙ <span>การเชื่อมต่อและสถานะ</span><span class="local-dot"></span></a><small>EMAR · 0.3.0 BETA</small></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><div>Emar <span class="slash">/</span> <span id="breadcrumb">แคมเปญ</span></div><div class="topbar-right"><span id="demo-badge" class="demo-badge" hidden>DEMO · SIMULATION</span><button id="demo-toggle" class="demo-toggle" type="button" data-action="demo-toggle" data-mode="off" aria-pressed="false">Demo mode: OFF</button><button id="demo-reset" class="demo-reset" type="button" data-action="demo-reset" hidden>Reset demo</button><span class="local-pill"><i></i> ทำงานบนเครื่องนี้</span><span class="avatar">คุณ</span></div></header>
+    <main id="main" tabindex="-1"><div class="loading">กำลังเปิดพื้นที่ทำงาน…</div></main>
+    <footer>สร้างอย่างตั้งใจ ส่งเมื่อพร้อม <span>Emar · local service</span></footer>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-body"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

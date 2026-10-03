@@ -1,0 +1,12 @@
+.dag-note{margin-top:-20px}
+.dag-run{margin:18px 0}
+.dag-run>.panel-head{align-items:flex-start}
+.dag-run>.panel-head small{display:block;margin-top:7px;color:var(--muted);font-size:10px}
+.dag-run>.panel-head small .badge{margin-left:7px}
+.dag-flow{display:grid;gap:12px}
+.dag-node{border:1px solid var(--line);border-left:3px solid #d8b49d;border-radius:7px;padding:14px 16px;background:#fff}
+.dag-node-top{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px}
+.dag-node-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 14px;margin:10px 0;color:var(--muted);font-size:10px;overflow-wrap:anywhere}
+.callback-result{margin-top:15px}
+.good-result{background:#edf7f0;border-color:#d4eadb;color:#3c805e}
+@media(max-width:600px){.dag-node-meta{grid-template-columns:1fr}.dag-run>.panel-head{align-items:flex-start;flex-direction:column}}
